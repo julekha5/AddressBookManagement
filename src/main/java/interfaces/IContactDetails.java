@@ -5,8 +5,11 @@ import entity.Person;
 import entity.Address;
 
 //Interface for addressbook
+
 public interface IContactDetails {
 
 	public void createContact();
+
+	public void addContact();
 
 }

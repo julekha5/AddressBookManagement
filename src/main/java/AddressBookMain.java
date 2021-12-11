@@ -14,11 +14,14 @@ public class AddressBookMain {
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to AddressBook Management System");
-		// Interface ref = interface implementation
+		
 		IContactDetails contactDetails = new ContactDetailsImpl();
 
 		System.out.println("Contact Creation Method Calling");
 		contactDetails.createContact();
+
+		System.out.println("Contact Adding Method Calling");
+		contactDetails.addContact();
 
 	}
 }
