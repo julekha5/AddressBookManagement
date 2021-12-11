@@ -1,14 +1,24 @@
 import java.util.*;
 import java.util.Scanner;
 
+import entity.Address;
+import entity.Person;
+import interfaces.IContactDetails;
+import services.ContactDetailsImpl;
+
 //main method
 public class AddressBookMain {
 
 	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to AddressBook Management System");
 
-		
+		System.out.println("Welcome to AddressBook Management System");
+		// Interface ref = interface implementation
+		IContactDetails contactDetails = new ContactDetailsImpl();
+
+		System.out.println("Contact Creation Method Calling");
+		contactDetails.createContact();
+
 	}
 }
