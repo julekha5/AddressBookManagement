@@ -25,6 +25,10 @@ public class AddressBookMain {
 
 		System.out.println("Contact Updation Method Calling");
 		contactDetails.updatePerson();
+		
+		System.out.println("Contact Deletion Method Calling");
+		contactDetails.deleteByName();
+		
 
 	}
 }

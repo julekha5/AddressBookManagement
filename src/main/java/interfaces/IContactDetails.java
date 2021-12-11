@@ -8,10 +8,12 @@ import entity.Address;
 
 public interface IContactDetails {
 
-    public void createContact();
+	public void createContact();
 
 	public void addContact();
-	
+
 	public void updatePerson();
+
+	public void deleteByName();
 
 }
